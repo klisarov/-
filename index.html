@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КолкуТрошам</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sometype+Mono:regular,500,600,700,italic,500italic,600italic,700italic" rel="stylesheet" />">
+</head>
+<body>
+    <div class="container">
+        <h1>КолкуТрошам?</h1>
+
+        <div class="balance-container">
+            <h2>Вашата состојба</h2>
+            <h1 id="balance">$0.00</h1>
+
+            <div class="summary">
+                <div class="income">
+                    <h3>Приход</h3>
+                    <p id="income-amount">$0.00</p>
+                </div>
+                <div class="expenses">
+                    <h3>Трошоци</h3>
+                    <p id="expense-amount">$0.00</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="transaction-container">
+                <h2>Трансакции</h2>
+                <ul id="transaction-list">
+                    <!-- трансакциите ќе се внесуваат тука -->
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2>Додади трансакции</h2>
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label for="description">Опис</label>
+                        <input type="text" id="description" placeholder="Внеси опис за трансакцијата..." required />
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Количина</label>
+                        <input type="number" id="amount" placeholder="Внеси количина..." required />
+                        <small>Користи (-) за трошоци</small>
+                    </div>
+
+                    <button type="submit">Додади трансакција</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
